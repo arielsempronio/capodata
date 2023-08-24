@@ -1,0 +1,147 @@
+{
+ "meta": {
+  "creator": "cds-dk 7.0.2"
+ },
+ "$version": "2.0",
+ "definitions": {
+  "potest_metadata": {
+   "kind": "service",
+   "@cds.external": true,
+   "@m.IsDefaultEntityContainer": "true",
+   "@sap.supported.formats": "atom json xlsx"
+  },
+  "potest_metadata.PurchaseOrderSet": {
+   "kind": "entity",
+   "@cds.external": true,
+   "@cds.persistence.skip": true,
+   "@sap.creatable": "false",
+   "@sap.updatable": "false",
+   "@sap.deletable": "false",
+   "@sap.searchable": "true",
+   "@sap.pageable": "false",
+   "@sap.content.version": "1",
+   "elements": {
+    "PONumber": {
+     "key": true,
+     "type": "cds.String",
+     "length": 10,
+     "@sap.unicode": "false",
+     "@sap.label": "Purchasing Doc.",
+     "@sap.creatable": "false",
+     "@sap.updatable": "false",
+     "notNull": true
+    },
+    "Supplier": {
+     "key": true,
+     "type": "cds.String",
+     "length": 10,
+     "@sap.unicode": "false",
+     "@sap.label": "Vendor",
+     "@sap.creatable": "false",
+     "@sap.updatable": "false",
+     "notNull": true
+    },
+    "CompanyCode": {
+     "type": "cds.String",
+     "length": 4,
+     "@sap.unicode": "false",
+     "@sap.label": "Company Code",
+     "@sap.creatable": "false",
+     "@sap.updatable": "false",
+     "@sap.filterable": "false",
+     "notNull": true
+    },
+    "DocumentCategory": {
+     "type": "cds.String",
+     "length": 1,
+     "@sap.unicode": "false",
+     "@sap.label": "Doc. Category",
+     "@sap.creatable": "false",
+     "@sap.updatable": "false",
+     "@sap.filterable": "false",
+     "notNull": true
+    },
+    "DocumentType": {
+     "type": "cds.String",
+     "length": 4,
+     "@sap.unicode": "false",
+     "@sap.label": "Document Type",
+     "@sap.creatable": "false",
+     "@sap.updatable": "false",
+     "@sap.filterable": "false",
+     "notNull": true
+    },
+    "DeletionInd": {
+     "type": "cds.String",
+     "length": 1,
+     "@sap.unicode": "false",
+     "@sap.label": "Deletion ind.",
+     "@sap.creatable": "false",
+     "@sap.updatable": "false",
+     "@sap.filterable": "false",
+     "notNull": true
+    },
+    "Status": {
+     "type": "cds.String",
+     "length": 1,
+     "@sap.unicode": "false",
+     "@sap.label": "Status",
+     "@sap.creatable": "false",
+     "@sap.updatable": "false",
+     "@sap.filterable": "false",
+     "notNull": true
+    },
+    "CreatedAt": {
+     "type": "cds.Timestamp",
+     "@odata.Type": "Edm.DateTime",
+     "@odata.Precision": 7,
+     "@sap.unicode": "false",
+     "@sap.label": "Created on",
+     "@sap.creatable": "false",
+     "@sap.updatable": "false"
+    },
+    "CreatedBy": {
+     "type": "cds.String",
+     "length": 12,
+     "@sap.unicode": "false",
+     "@sap.label": "Created By",
+     "@sap.creatable": "false",
+     "@sap.updatable": "false",
+     "@sap.filterable": "false",
+     "notNull": true
+    },
+    "PurchasingOrg": {
+     "type": "cds.String",
+     "length": 4,
+     "@sap.unicode": "false",
+     "@sap.label": "Purchasing org.",
+     "@sap.creatable": "false",
+     "@sap.updatable": "false",
+     "@sap.filterable": "false",
+     "notNull": true
+    },
+    "PurchasingGroup": {
+     "type": "cds.String",
+     "length": 3,
+     "@sap.unicode": "false",
+     "@sap.label": "Purch. Group",
+     "@sap.creatable": "false",
+     "@sap.updatable": "false",
+     "@sap.filterable": "false",
+     "notNull": true
+    },
+    "Currency": {
+     "type": "cds.String",
+     "length": 5,
+     "@sap.unicode": "false",
+     "@sap.label": "Currency",
+     "@sap.creatable": "false",
+     "@sap.updatable": "false",
+     "@sap.filterable": "false",
+     "@sap.semantics": "currency-code",
+     "notNull": true
+    }
+   }
+  }
+ }
+}
